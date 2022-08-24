@@ -1,0 +1,29 @@
+---
+title: "data_exploration"
+author: "Jake Eisaguirre"
+date: "2022-08-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require(librarian)){
+  install.packages("librarian")
+  library(librarian)
+}
+
+librarian::shelf(here, tidyverse, janitor)
+```
+
+#### load data
+```{r}
+
+ves <- read_csv(here("data", "ves.csv")) %>% 
+  clean_names()
+
+cap <- read_csv(here("data", "cap.csv")) %>% 
+  clean_names()
+
+```
+
