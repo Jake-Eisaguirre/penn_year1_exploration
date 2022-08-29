@@ -20,7 +20,7 @@ if (!require(librarian)){
   library(librarian)
 }
 
-librarian::shelf(here, tidyverse, janitor, scales, viridis, ggpubr, kableExtra, broom, stringr)
+librarian::shelf(here, tidyverse, janitor, scales, viridis, ggpubr, kableExtra, broom, stringr, forcats)
 ```
 
 $~$
@@ -50,7 +50,8 @@ visual <- ves %>%
   group_by(site, species_ves) %>% 
   summarise(count = sum(count),
             species_ves = species_ves) %>% 
-  mutate(repeat_id = cur_group_id()) %>% 
+  mutate(repeat_id = cur_group_id(),
+         species_ves = as.factor(species_ves)) %>% 
   filter(!duplicated(repeat_id)) %>% 
   select(!repeat_id)
 
@@ -63,9 +64,9 @@ $~$
 
 ### Visualize All VES Data
 
-```{r, class.source = "fold-show", message=FALSE}
+```{r,  message=FALSE}
 
-ggplot(data = visual, aes(fill = species_ves, x = fct_infreq(species_ves), y = scaled_count)) +
+ggplot(data = visual, aes(fill = species_ves, x = reorder(species_ves, -scaled_count), y = scaled_count)) +
   geom_col() +
   geom_text(aes(label = scaled_count), vjust = -0.5, size = 3) +
   theme_classic()+
@@ -82,10 +83,12 @@ ggplot(data = visual, aes(fill = species_ves, x = fct_infreq(species_ves), y = s
   annotate("segment",x=Inf,xend=-Inf,y=Inf,yend=Inf,color="black",lwd=0.5)
 
 ```
- 
- $~$
- 
-#### VES wrangling - Tuttle Pond and Wood Lab Pond sites Repeated
+
+###### **Interpretation**: From this figure we can see the percent occurrence per species at each unique site from the VES. There were 5 unique sites within the VES and 3 unique species recorded in the VES. It appears Rana clamitans is the most occurring species and Rana pipiens the least occurring species in the VES.
+
+$~$
+
+#### VES wrangling - Tuttle Pond and Wood Lab Pond (repeated sites)
 
 ```{r, message=FALSE}
 
@@ -118,7 +121,7 @@ $~$
 
 ### Visualize Tuttle Pond
 
-```{r, class.source = "fold-show", message=FALSE}
+```{r,  message=FALSE}
 ggplot(data = tuttle, aes(fill = species_ves, x = fct_infreq(species_ves), y = scaled_count)) +
   geom_col() +
   geom_text(aes(label = scaled_count), vjust = -0.5, size = 3) +
@@ -138,6 +141,8 @@ ggplot(data = tuttle, aes(fill = species_ves, x = fct_infreq(species_ves), y = s
 
 
 ```
+
+###### **Interpretation**: Tuttle Pond was one of two repeated sites, the other being Woods Lab Pond. VES for Tuttle Pond was conducted during 3 unique dates with trends eliciting the date when the survey was conducted may have an impact on the species occurrence. A total of 100 frogs were observed during those 3 dates.
 
 $~$
 
@@ -159,18 +164,17 @@ ves_analsys_tuttle$scaled_count<- ((ves_analsys_tuttle$count/ sum(ves_analsys_tu
 
 ```
 
+$~$
+
+#### One-way ANOVA determining if date has an affect on mean percent occurrence per species at Tuttle Pond
 
 $~$
 
-#### One way ANOVA explaining count from date of survey at Tuttle Pond
+###### H0: There is no difference in mean percent occurrence per species between the dates surveyed at Tuttle Pond
 
-$~$
+###### [ **HA: There is a difference in mean percent occurrence per species between the dates surveyed at Tuttle Pond** ]{style="color:blue"}
 
-###### H0: There is no difference in the counts of all frogs between the dates surveyed at Tuttle Pond
-
-###### HA: There is a difference in the counts of all frogs between the dates surveyed at Tuttle Pond
-
-```{r, class.source = "fold-show", message=FALSE}
+```{r,  message=FALSE}
 one_way_date <- aov(scaled_count ~ date, data = ves_analsys_tuttle)
 
 tidy(one_way_date) %>% 
@@ -178,17 +182,19 @@ tidy(one_way_date) %>%
   kable_styling()
 ```
 
-$~$
-
-#### One way ANOVA explaining count from species at Tuttle Pond
+###### **Interpretation**: With an $\alpha$=0.05 we reject the null hypothesis and expect date has an affect on mean percent occurrence for Tuttle Pond.
 
 $~$
 
-###### H0: There is no difference in the counts of all frogs between species at Tuttle Pond
+#### One-way ANOVA determing if the species surveyed has an affect on mean percent occurrence per species at Tuttle Pond
 
-###### HA: There is a difference in the counts of all frogs between species at Tuttle Pond
+$~$
 
-```{r, class.source = "fold-show", message=FALSE}
+###### [ **H0: There is no difference in mean species count between species surveyed Tuttle Pond** ]{style="color:blue"}
+
+###### HA: There is a difference in mean percent occurrence per species between species surveyed Tuttle Pond
+
+```{r,  message=FALSE}
 one_way_species <- aov(scaled_count ~ species_ves, data = ves_analsys_tuttle)
 
 tidy(one_way_species) %>% 
@@ -196,17 +202,19 @@ tidy(one_way_species) %>%
   kable_styling()
 ```
 
-$~$
-
-#### Two way ANOVA explaining count from species + date of survey at Tuttle Pond
+###### **Interpretation**: With an $\alpha$=0.05 we fail reject the null hypothesis and expect species surveyed does not affect in mean percent occurrence per species for Tuttle Pond.
 
 $~$
 
-###### H0: There is no difference in counts of all frogs between the dates surveyed and species at Tuttle Pond
+#### Two-way ANOVA determining if the species surveyed and date of survey has an affect on mean percent occurrence per species at Tuttle Pond
 
-###### HA: There is a difference in counts of all frogs between the dates surveyed and species at Tuttle Pond
+$~$
 
-```{r, class.source = "fold-show", message=FALSE}
+###### H0: There is no difference in mean occurrence per species from the dates surveyed and species surveyed at Tuttle Pond
+
+###### HA: There is a difference in mean occurrence per species from the dates surveyed and species surveyed at Tuttle Pond
+
+```{r,  message=FALSE}
 two_way_species_date <- aov(scaled_count ~ date + species_ves, data = ves_analsys_tuttle)
 
 tidy(two_way_species_date) %>% 
@@ -223,7 +231,7 @@ $~$
 
 #### Sample size too small for analysis (n=11)
 
-```{r, class.source = "fold-show", message=FALSE}
+```{r,  message=FALSE}
 
 ggplot(data = wood, aes(fill = species_ves, x = fct_infreq(species_ves), y = scaled_count)) +
   geom_col() +
@@ -244,11 +252,14 @@ ggplot(data = wood, aes(fill = species_ves, x = fct_infreq(species_ves), y = sca
 
 ```
 
+###### **Interpretation**: Wood Lab Pond had 2 unique dates when a VES was conducted. A total of 11 frogs were observed during the 2 dates of surveys. Due to a small sample size no further analysis was conducted on this specific site.
+
 $~$
 
 ### Visualize Species Occurrance
 
-#### Species Occurance Wranglin
+#### Species Occurrance Wrangling
+
 ```{r, message = F, warning=F}
 combined_site <- ves_repeat_survs %>% 
   group_by(site, species_ves) %>% 
@@ -264,12 +275,11 @@ combine_analysis <- ves %>%
 combine_analysis$scaled_count<- ((combine_analysis$count/ sum(combine_analysis$count))*100)
 ```
 
-
 $~$
 
 #### Plot for species occurances per site
 
-```{r, class.source = "fold-show", message=FALSE, warning=F}
+```{r,  message=FALSE, warning=F}
 
 ggplot(data = combined_site, aes(x = fct_infreq(species_ves), y = scaled_count, fill = species_ves)) +
   geom_col() +
@@ -281,25 +291,28 @@ ggplot(data = combined_site, aes(x = fct_infreq(species_ves), y = scaled_count, 
         legend.position = "none") +
   scale_fill_viridis_d(name = "Species") +
   scale_y_continuous(expand = c(0,0), limits = c(0,55)) +
-  ylab("Percent Occurrence") +
+  ylab("Percent Occurrance") +
   xlab("Species") +
-  labs(title = "VES Repeat Sites",
+  labs(title = "VES Repeated Sites",
        subtitle = "Tuttle dates (n=3) & Wood lab dates (n=2)") +
   annotate("segment",x=Inf,xend=-Inf,y=Inf,yend=Inf,color="black",lwd=0.5)
 
 ```
 
+###### **Interpretation**: Of the VES where sites were repeated we see the majority of percent occurrence between the three unique species occured at Tuttle Pond.
+
 $~$
 
 #### Plot for species of combined repeated sites
 
-```{r, class.source = "fold-show", message=FALSE, warning=F}
+```{r,  message=FALSE, warning=F}
 
 ggplot(data = combined_site, aes(x = fct_infreq(species_ves), y = scaled_count, fill = species_ves)) +
   geom_col() +
   theme_classic()+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5),
-        strip.background = element_blank()) +
+        strip.background = element_blank(),
+        legend.position = "none") +
   scale_fill_viridis_d(name = "Species") +
   scale_y_continuous(expand = c(0,0), limits = c(0,60)) +
   ylab("Percent Occurrence") +
@@ -310,38 +323,63 @@ ggplot(data = combined_site, aes(x = fct_infreq(species_ves), y = scaled_count, 
 
 ```
 
+###### **Interpretation**: When looking at the percent occurance of each species between the two repeated sites (Tuttle Pond & Woods Lab Pond) we see Rana catesbeiana occured the most with Rana pipiens occuring the least.
+
 $~$
 
 ### Analyse Sites
 
 $~$
 
-#### One way anova explaining count based on site between Tuttle Pond and Woods Lab Pond
+#### One-way ANOVA/T-test determining if site has an affect on mean percent occurrence per species
 
 $~$
 
-###### H0: There is no difference in species count between sites
+###### H0: There is no difference on mean percent occurrence per species between repeated sites (Tuttle & Wood)
 
-###### HA: There is a difference in species count between sites
+###### [ **HA: There is a difference in mean percent occurrence per species between repeated sites (Tuttle & Wood)**  ]{style="color:blue"}
 
-```{r, class.source = "fold-show", message=FALSE}
+```{r,  message=FALSE}
 one_way_site <- aov(scaled_count ~ site, data = combine_analysis)
 tidy(one_way_site) %>% 
   kable(digits = 4) %>% 
   kable_styling()
 ```
 
-$~$
-
-#### Two way anova explaining count based on site + species between Tuttle Pond and Woods Lab Pond
+###### **Interpretation**: With an $\alpha$=0.05 we reject the null and expect the site that has been repeated for a VES will affect the mean percent occurance per species.
 
 $~$
 
-###### H0: There is no difference in species count between sites and species present
+#### One-way ANOVA determining if species has an affect on mean percent occurrence per species
 
-###### HA: There is a difference in species count between sites and species present
+$~$
 
-```{r, class.source = "fold-show", message=FALSE}
+###### [ **H0: There is no difference in mean species counts between species surveyed at repeated sites (Tuttle & Wood)**  ]{style="color:blue"}
+
+###### HA: There is a difference in mean species counts between species surveyed repeated sites (Tuttle & Wood)
+
+```{r, message=F}
+
+one_way_spec <- aov(scaled_count ~ species_ves, data = combine_analysis)
+tidy(one_way_spec) %>% 
+  kable(digits = 4) %>% 
+  kable_styling()
+
+```
+
+###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null and see no difference in percent occurance between each species for sites repeated for VES.
+
+$~$
+
+#### Two-way ANOVA determining if repeated sites (Tuttle Pond and Woods Lab Pond) and species present has an affect on mean percent occurrence per species
+
+$~$
+
+###### H0: There is no difference in mean percent occurrence per species between repeated sites and species present.
+
+###### HA: There is a difference in mean percent occurrence per species between repeated sites and species present.
+
+```{r,  message=FALSE}
 
 two_way_site_species <- aov(scaled_count ~ site + species_ves, data = combine_analysis)
 tidy(two_way_site_species) %>% 
@@ -386,7 +424,8 @@ capture <- cap %>%
   filter(!duplicated(repeat_id)) %>% 
   filter(!species_capture == "negative control") %>% 
   select(!repeat_id) %>% 
-  rename(capture_count = count)
+  rename(capture_count = count) %>% 
+  mutate(species_capture = as.factor(species_capture))
 
 capture$capture_scaled_count<- ((capture$capture_count/ sum(capture$capture_count))*100) %>% 
   round(digits = 2)
@@ -398,7 +437,8 @@ visual_join <- visual %>%
 comb_data <- merge(capture, visual_join, by.x = c("site", "species_capture"), by.y = c("site", "species_ves")) %>% 
   rename(species = species_capture) %>% 
   select(!c(capture_count, visual_count)) %>% 
-  pivot_longer(!c(site, species), names_to = "capture_ves", values_to = "scaled_count") 
+  pivot_longer(!c(site, species), names_to = "capture_ves", values_to = "scaled_count") %>% 
+  mutate(species = as.factor(species))
 
 
 ```
@@ -406,10 +446,13 @@ comb_data <- merge(capture, visual_join, by.x = c("site", "species_capture"), by
 $~$
 
 ### Visualize All Capture Data
-```{r, class.source = "fold-show", message=FALSE, warning=F}
 
-ggplot(data = capture, aes(x = fct_infreq(species_capture), y = capture_scaled_count, fill = species_capture)) +
-  geom_col() +
+```{r,  message=FALSE, warning=F}
+
+ggplot(data = capture, aes(x = reorder(species_capture, -capture_scaled_count), 
+                           y = capture_scaled_count, 
+                           fill = species_capture)) +
+  geom_col(stat = 'identity') +
   theme_classic()+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5),
         strip.background = element_blank(),
@@ -424,34 +467,38 @@ ggplot(data = capture, aes(x = fct_infreq(species_capture), y = capture_scaled_c
 
 ```
 
+###### **Interpretation**: Of all the Capture Survey data, when looking at similiar species from VES, we see Rana catesbeiana being captured the most, Rana clamitans captured the second most, and Rana pipiens being captured the 5th most.
 
 $~$
 
 ### Visualize Capture and VES Data for Matching Sites and Species
-```{r, class.source = "fold-show", message=FALSE}
 
-ggplot(data = comb_data, aes(x = fct_infreq(species), y = scaled_count, fill = capture_ves)) +
+```{r,  message=FALSE}
+
+ggplot(data = comb_data, aes(x = reorder(species, -scaled_count), y = scaled_count, fill = capture_ves)) +
   geom_col(stat = "identity", position = position_dodge()) +
   theme_classic()+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5),
         strip.background = element_blank()) +
-  scale_fill_viridis_d(name = "Species") +
+  scale_fill_viridis_d(name = "Survey Method") +
   scale_y_continuous(expand = c(0,0), limits = c(0,35)) +
   ylab("Percent Occurrence") +
   xlab("Species") +
-  labs(title = "Capture and VES Species Counts of Matching Sites and Species",
-       subtitle = "")
+  labs(title = "Capture and VES Species Occurance",
+       subtitle = "Matching Sites and Species")
 
 
 ```
 
+###### **Interpretation**: When comparing the percent occurrence between the 3 similiar species, 2 different survey types (Capture Surveys and VES), and sites where both occured, we see similiar percent occurrences for Rana catesbeiana and Rana pipiens and starkly different percent occurrences in Rana clamitans.
+
 $~$
 
-### Wrangle Capture/VES Analysis Data
+### All Capture and VES Matching Data
 
 ```{r}
 
-ggplot(data = comb_data, aes(x = fct_infreq(site), y = scaled_count, fill = capture_ves)) +
+ggplot(data = comb_data, aes(x = reorder(site, -scaled_count), y = scaled_count, fill = capture_ves)) +
   geom_col(stat = "identity", position = position_dodge()) +
   theme_classic()+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5),
@@ -461,14 +508,40 @@ ggplot(data = comb_data, aes(x = fct_infreq(site), y = scaled_count, fill = capt
   ylab("Percent Occurrence") +
   xlab("Site") +
   labs(title = "Capture and VES Species Occurance of All Sites",
-       subtitle = "")
+       subtitle = "Matching Sites and Species")
 
 ```
+
+###### **Interpretation**: When comparing percent occurrence between survey methods at matching survey sites we see no clear trend in percent occurance.
+
+$~$
+
+### Analyse Capture and VES data
+
+$~$
+
+#### One-way ANOVA/T-test determining if the survey method affects the mean percent occurrence per species
+
+$~$
+
+###### [ **H0: There is no difference in mean percent occurrence per species between survey methods (Capture & VES)** ]{style="color:blue"}
+
+###### HA: There is a difference in mean percent occurrence per species between survey methods (Capture & VES)
+
+```{r}
+
+cap_ves <- aov(scaled_count ~ capture_ves, data = comb_data)
+tidy(cap_ves) %>% 
+  kable(digits = 4) %>% 
+  kable_styling()
+
+
+```
+
+###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null indicating there is no difference in percent occurance per species between survey methods.
 
 $~$
 
 # GitHub
 
-$~$
-
-##### Github repository containing the reproducible script can be found [HERE](https://github.com/Jake-Eisaguirre/penn_year1_exploration). Cloning or Forking the repository to your own computer will allow for complete reproducibility of this data exploration. 
+##### Github repository containing the reproducible script can be found [HERE](https://github.com/Jake-Eisaguirre/penn_year1_exploration). Cloning or Forking the repository to your own computer will allow for complete reproducibility of this data exploration.
