@@ -186,6 +186,22 @@ tidy(one_way_date) %>%
 
 $~$
 
+#### Tukey post-hoc test to determine significant date
+```{r}
+
+date_tukey <- TukeyHSD(one_way_date)
+
+tidy(date_tukey) %>% 
+  kable(digits = 2) %>% 
+  kable_styling()
+
+plot(date_tukey, las = 3, cex.axis = 0.5)
+
+```
+
+
+$~$
+
 #### One-way ANOVA determing if the species surveyed has an affect on mean percent occurrence per species at Tuttle Pond
 
 $~$
@@ -215,7 +231,7 @@ $~$
 ###### HA: There is a difference in mean occurrence per species from the dates surveyed and species surveyed at Tuttle Pond
 
 ```{r,  message=FALSE}
-two_way_species_date <- aov(scaled_count ~ date + species_ves, data = ves_analsys_tuttle)
+two_way_species_date <- aov(scaled_count ~ date*species_ves, data = ves_analsys_tuttle)
 
 tidy(two_way_species_date) %>% 
   kable(digits = 2) %>% 
@@ -364,6 +380,21 @@ one_way_spec <- aov(scaled_count ~ species_ves, data = combine_analysis)
 tidy(one_way_spec) %>% 
   kable(digits = 4) %>% 
   kable_styling()
+
+```
+
+$~$
+
+#### Tukey post-hoc test to determine significant date
+```{r}
+
+spec_tukey <- TukeyHSD(one_way_spec)
+
+tidy(spec_tukey) %>% 
+  kable(digits = 2) %>% 
+  kable_styling()
+
+plot(spec_tukey, las = 3, cex.axis = 0.3)
 
 ```
 
