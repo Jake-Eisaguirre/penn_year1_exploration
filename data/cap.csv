@@ -1,0 +1,436 @@
+"site","date","survey_time","start_time","end_time","duration_min","time_of_capture","species_capture","capture_type","life_stage","sex","snout_vent_length","body_mass"
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,25.4,1.0
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:47:00",rana catesbeiana,new,adult,female,100.8,118.1
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:50:00",rana clamitans,,adult,male,,
+admin pond,2022-05-20,day,"13:28:00","14:37:00","69","13:36:00",bufo americanus,,,unknown,31.8,3.25
+admin pond,2022-05-20,day,"13:28:00","14:37:00","69","13:41:00",pseudacris crucifer,new,adult,unknown,26.2,1.0
+admin pond,2022-05-20,day,"13:28:00","14:37:00","69","13:53:00",bufo americanus,,adult,unknown,50.3,14.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:03:00",rana catesbeiana,recapture,,,51.9,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:09:00",rana pipiens,recapture,,,73.5,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:12:00",rana catesbeiana,recapture,,,40.5,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:17:00",rana catesbeiana,new,juvenile,unknown,53.0,11.75
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:21:00",rana catesbeiana,new,juvenile,unknown,56.5,14.75
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:25:00",rana pipiens,recapture,,,55.3,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:28:00",rana catesbeiana,recapture,,,48.2,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:32:00",rana pipiens,new,adult,female,49.5,8.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:37:00",rana pipiens,new,adult,female,57.0,15.0
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:45:00",rana catesbeiana,recapture,,,54.2,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:48:00",rana catesbeiana,recapture,,,52.3,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:52:00",rana catesbeiana,new,juvenile,unknown,58.8,14.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:55:00",rana catesbeiana,recapture,,,52.9,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:03:00",rana catesbeiana,recapture,,,47.8,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:21:00",rana pipiens,recapture,,,79.1,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:24:00",rana catesbeiana,recapture,,,47.0,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:31:00",rana catesbeiana,new,adult,female,66.1,31.7
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:34:00",rana catesbeiana,new,juvenile,unknown,57.3,16.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:37:00",rana catesbeiana,new,juvenile,unknown,58.6,18.55
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:41:00",rana catesbeiana,new,juvenile,unknown,52.0,14.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:08:00",pseudacris crucifer,new,adult,male,27.1,1.0
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:35:00",hyla versicolor,,adult,male,48.8,8.0
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:11:00",pseudacris crucifer,new,adult,male,26.6,1.0
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:18:00",pseudacris crucifer,new,adult,male,25.8,1.0
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:34:00",rana catesbeiana,recapture,,,55.6,
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:43:00",rana catesbeiana,new,adult,female,71.0,31.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","21:47:00",rana pipiens,new,adult,female,66.5,22.5
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:20:00",rana catesbeiana,new,juvenile,unknown,55.9,15.6
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:40:00",rana catesbeiana,new,juvenile,unknown,52.8,11.25
+admin pond,2022-05-19,night,"19:31:00","22:59:00","208","22:57:00",rana catesbeiana,new,juvenile,unknown,57.2,14.5
+admin pond,2022-05-20,day,"13:28:00","14:37:00","69","13:30:00",bufo americanus,,,unknown,32.4,3.75
+admin pond,2022-05-20,day,"13:28:00","14:37:00","69","14:15:00",bufo americanus,,,unknown,35.6,3.75
+admin pond,2022-05-20,day,"13:28:00","14:37:00","69","14:18:00",bufo americanus,,,unknown,36.1,4.75
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","22:35:00",rana catesbeiana,new,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","22:49:00",rana catesbeiana,new,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","22:14:00",hyla versicolor,,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","22:19:00",hyla versicolor,,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","23:05:00",hyla versicolor,,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","21:53:00",rana catesbeiana,new,adult,female,119.5,200.0
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","23:00:00",rana clamitans,,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102","23:03:00",rana clamitans,,,,,
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:32:00",rana catesbeiana,new,adult,female,88.3,68.0
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:38:00",hyla versicolor,,adult,male,46.0,7.85
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:47:00",rana clamitans,,adult,female,70.6,42.2
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:55:00",rana catesbeiana,recapture,adult,female,119.5,200.0
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:36:00",rana catesbeiana,new,adult,female,78.1,54.7
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:49:00",rana catesbeiana,new,adult,female,84.5,57.9
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:47:00",hyla versicolor,,adult,male,42.4,5.2
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:16:00",hyla versicolor,,adult,male,43.8,7.3
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:41:00",rana catesbeiana,new,adult,female,73.3,49.1
+rv pond,2022-06-08,night,"21:11:00","22:02:00","51","21:52:00",hyla versicolor,,adult,male,43.6,5.5
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:51:00",rana catesbeiana,new,juvenile,unknown,56.1,15.7
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:04:00",hyla versicolor,,adult,male,46.3,8.95
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:08:00",rana catesbeiana,new,juvenile,unknown,48.6,9.5
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:41:00",hyla versicolor,,adult,male,43.5,7.2
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:46:00",rana clamitans,,adult,female,83.1,55.3
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:11:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:17:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:54:00",hyla versicolor,,adult,male,42.6,7.5
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:03:00",rana catesbeiana,new,adult,female,65.7,24.65
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:12:00",rana clamitans,,adult,male,64.7,26.7
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:22:00",rana catesbeiana,new,adult,female,131.1,200.0
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:31:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:43:00",rana catesbeiana,new,adult,female,76.1,46.5
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:13:00",hyla versicolor,new,adult,male,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:16:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:27:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:19:00",hyla versicolor,new,adult,male,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:35:00",rana catesbeiana,new,adult,female,62.8,28.3
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:54:00",hyla versicolor,new,adult,male,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:30:00",rana catesbeiana,new,juvenile,unknown,48.3,150.0
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:14:00",hyla versicolor,new,adult,unknown,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:20:00",rana catesbeiana,new,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:28:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:53:00",rana catesbeiana,new,adult,female,68.0,38.8
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:01:00",rana catesbeiana,new,juvenile,unknown,49.0,13.75
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:17:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:07:00",hyla versicolor,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:12:00",hyla versicolor,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:19:00",rana catesbeiana,new,adult,female,,200.0
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:25:00",rana catesbeiana,new,adult,female,79.0,52.1
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:50:00",rana clamitans,,adult,female,76.9,45.0
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:53:00",hyla versicolor,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:55:00",hyla versicolor,,adult,male,38.8,6.2
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:00:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:03:00",rana catesbeiana,new,juvenile,unknown,51.8,15.15
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:10:00",rana catesbeiana,new,adult,male,94.1,104.0
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:27:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:32:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:41:00",rana catesbeiana,new,juvenile,unknown,50.8,12.75
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:43:00",rana catesbeiana,new,juvenile,unknown,66.2,23.0
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:00:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:11:00",hyla versicolor,new,adult,male,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:13:00",rana catesbeiana,new,adult,female,52.9,14.25
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:23:00",rana catesbeiana,new,adult,female,74.0,44.8
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:37:00",rana clamitans,new,juvenile,unknown,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:47:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:50:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:55:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:01:00",rana catesbeiana,new,adult,female,50.0,20.5
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:04:00",rana catesbeiana,new,adult,female,61.6,23.89
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:08:00",rana clamitans,new,juvenile,unknown,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","23:25:00",rana catesbeiana,new,juvenile,unknown,47.8,14.85
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:41:00",rana clamitans,,adult,male,59.3,20.1
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:52:00",hyla versicolor,,adult,male,42.7,7.2
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","21:58:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:06:00",rana catesbeiana,new,juvenile,unknown,60.9,20.2
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:10:00",rana clamitans,,adult,female,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:23:00",rana clamitans,,adult,female,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:27:00",rana clamitans,,adult,female,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:31:00",rana catesbeiana,new,juvenile,unknown,50.3,11.95
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:37:00",rana clamitans,,adult,female,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","22:42:00",rana catesbeiana,new,adult,male,105.9,118.65
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:08:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:11:00",rana clamitans,,adult,male,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63","23:16:00",rana clamitans,,adult,female,76.6,41.75
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:14:00",rana catesbeiana,new,juvenile,unknown,44.1,11.5
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:23:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:23:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:32:00",hyla versicolor,new,adult,unknown,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:46:00",rana clamitans,new,juvenile,unknown,,
+tuttle pond,2022-06-15,night,"21:58:00","23:32:00","94","22:59:00",rana catesbeiana,new,adult,female,87.4,73.7
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:56:00",desmognathus fuscus,,adult,unknown,58.2,0.5
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:07:00",unknown,,juvenile,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:26:00",eurycea bislineata,,adult,unknown,53.4,0.4
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:30:00",eurycea bislineata,,adult,unknown,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:35:00",eurycea bislineata,,adult,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:38:00",pseudotriton ruber,,adult,unknown,135.9,11.8
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:08:00",desmognathus fuscus,,adult,unknown,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:55:00",eurycea bislineata,,adult,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","12:02:00",desmognathus fuscus,,adult,unknown,88.7,0.9
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","10:55:00",desmognathus ochrophaeus,,adult,unknown,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:27:00",unknown,,juvenile,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:33:00",unknown,,juvenile,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:47:00",unknown,,juvenile,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","11:56:00",unknown,,juvenile,,,
+tryon-weber,2022-06-22,day,"10:58:00","12:12:00","74","12:10:00",desmognathus ochrophaeus,,adult,unknown,65.4,1.0
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:05:00",desmognathus ochrophaeus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:28:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:32:00",eurycea bislineata,,adult,unknown,80.7,2.0
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:40:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:52:00",desmognathus ochrophaeus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:58:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:04:00",desmognathus ochrophaeus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:17:00",desmognathus ochrophaeus,,adult,unknown,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:28:00",plethodon glutinosus,,,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:28:00",desmognathus fuscus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:28:00",plethodon glutinosus,,,unknown,40.4,0.2
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:33:00",desmognathus ochrophaeus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:10:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:46:00",desmognathus fuscus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:04:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:08:00",desmognathus ochrophaeus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:25:00",notophthalmus viridescens,,adult,unknown,66.0,1.4
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","10:40:00",desmognathus fuscus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","10:40:00",plethodon glutinosus,,,unknown,40.4,0.2
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:06:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:25:00",unknown,,juvenile,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:37:00",desmognathus fuscus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","11:56:00",desmognathus fuscus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:13:00",plethodon cinereus,,adult,,,
+tryon-weber,2022-06-23,day,"10:40:00","12:33:00","113","12:26:00",desmognathus ochrophaeus,,adult,unknown,63.6,0.6
+tryon-weber,2022-06-23,night,"21:48:00","22:27:00","39","21:56:00",rana clamitans,,adult,female,55.1,14.55
+tryon-weber,2022-06-23,night,"21:48:00","22:27:00","39","21:47:00",eurycea bislineata,,adult,unknown,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:38:00",rana clamitans,,adult,female,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:39:00",rana catesbeiana,new,juvenile,unknown,53.0,16.3
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:50:00",rana catesbeiana,new,juvenile,unknown,53.6,17.8
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:55:00",rana clamitans,,adult,male,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:03:00",rana catesbeiana,new,adult,female,96.4,103.5
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:06:00",rana catesbeiana,new,juvenile,unknown,60.2,17.5
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:25:00",rana catesbeiana,new,adult,female,82.6,59.7
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:38:00",rana catesbeiana,new,adult,female,84.3,60.9
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:41:00",rana catesbeiana,new,juvenile,unknown,49.1,14.3
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:45:00",rana clamitans,,adult,male,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:55:00",rana clamitans,,adult,male,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:19:00",rana catesbeiana,new,juvenile,unknown,55.6,16.6
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:26:00",rana catesbeiana,new,juvenile,unknown,49.5,15.2
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:36:00",rana catesbeiana,new,adult,female,86.5,65.1
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:45:00",rana clamitans,,adult,male,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:51:00",rana clamitans,,adult,female,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","22:55:00",rana catesbeiana,new,adult,male,108.1,129.4
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:11:00",rana catesbeiana,new,adult,male,106.7,116.3
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:17:00",rana catesbeiana,new,juvenile,unknown,56.7,16.0
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:21:00",rana catesbeiana,new,adult,female,80.0,54.0
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:33:00",rana clamitans,,juvenile,unknown,,
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84","23:42:00",rana clamitans,,adult,female,,
+vorisek pond,2022-06-28,night,"21:41:00",,,"21:45:00",rana catesbeiana,recapture,,,104.1,
+vorisek pond,2022-06-28,night,"21:41:00",,,"21:52:00",rana clamitans,,adult,male,81.9,54.4
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:08:00",rana catesbeiana,recapture,,,98.7,
+vorisek pond,2022-06-28,night,"21:41:00",,,"21:58:00",rana catesbeiana,new,juvenile,unknown,53.0,16.9
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:10:00",rana catesbeiana,new,juvenile,unknown,59.7,14.0
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:27:00",rana catesbeiana,recapture,adult,female,64.2,
+vorisek pond,2022-06-28,night,"21:41:00",,,"23:05:00",rana catesbeiana,recapture,,,44.7,
+vorisek pond,2022-06-28,night,"21:41:00",,,"21:47:00",rana catesbeiana,recapture,,,56.2,
+vorisek pond,2022-06-28,night,"21:41:00",,,"21:53:00",rana catesbeiana,new,juvenile,unknown,50.9,14.2
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:00:00",rana catesbeiana,recapture,,,78.2,
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:14:00",rana catesbeiana,recapture,,,80.5,
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:20:00",rana catesbeiana,new,adult,female,97.4,70.4
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:27:00",rana catesbeiana,recapture,,,80.1,
+vorisek pond,2022-06-28,night,"21:41:00",,,"22:45:00",rana catesbeiana,recapture,,,54.6,
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:19:00",Rana catesbeiana x Rana clamitans (possibly),new,adult,female,81.2,55.6
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:33:00",rana clamitans,,adult,male,75.6,34.8
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:40:00",rana catesbeiana,new,juvenile,unknown,46.8,9.0
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:15:00",rana clamitans,,adult,female,85.9,56.2
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:17:00",rana clamitans,,adult,female,69.1,34.0
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:52:00",hyla versicolor,,juvenile,unknown,19.0,0.4
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:55:00",rana catesbeiana,new,adult,female,108.7,138.5
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:13:00",rana catesbeiana,new,adult,female,111.8,177.3
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:33:00",rana catesbeiana,new,adult,female,78.9,55.1
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:37:00",rana catesbeiana,new,adult,female,69.7,42.2
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:04:00",rana clamitans,,adult,male,68.6,34.0
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:16:00",rana catesbeiana,new,adult,female,98.5,123.4
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:35:00",rana catesbeiana,new,adult,female,76.7,47.5
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:57:00",rana catesbeiana,new,adult,female,106.8,157.8
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:01:00",rana catesbeiana,new,juvenile,unknown,43.0,9.7
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:08:00",rana catesbeiana,new,adult,female,69.0,36.2
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:16:00",rana clamitans,,juvenile,unknown,33.4,3.0
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:19:00",rana clamitans,,adult,male,72.6,41.1
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:30:00",rana catesbeiana,new,adult,female,84.7,62.2
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:03:00",rana catesbeiana,new,juvenile,unknown,46.7,8.7
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:05:00",rana catesbeiana,new,juvenile,unknown,48.1,11.0
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:08:00",rana catesbeiana,new,juvenile,unknown,46.8,8.1
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:10:00",rana catesbeiana,new,juvenile,unknown,47.9,8.8
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:24:00",rana catesbeiana,new,adult,female,86.7,71.5
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:28:00",rana catesbeiana,new,adult,female,101.0,144.2
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:34:00",rana catesbeiana,new,adult,female,73.2,45.0
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:48:00",rana catesbeiana,new,adult,female,90.3,107.4
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:59:00",rana catesbeiana,new,adult,male,102.5,170.2
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:13:00",rana catesbeiana,new,juvenile,unknown,39.8,7.5
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:19:00",rana catesbeiana,new,adult,female,91.3,84.7
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:36:00",rana catesbeiana,new,adult,female,83.0,76.3
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:42:00",rana catesbeiana,recapture,adult,female,99.5,117.8
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:55:00",rana catesbeiana,new,adult,female,129.0,287.0
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:02:00",rana catesbeiana,new,juvenile,unknown,45.2,8.7
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:06:00",rana catesbeiana,new,juvenile,unknown,48.5,11.0
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:09:00",rana catesbeiana,new,juvenile,unknown,45.0,8.6
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:28:00",rana catesbeiana,new,adult,female,68.3,31.6
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:51:00",rana catesbeiana,new,adult,female,86.0,75.0
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:24:00",rana catesbeiana,new,adult,female,87.1,128.3
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:52:00",rana catesbeiana,new,adult,female,88.1,71.7
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","22:28:00",rana clamitans,,adult,female,75.2,28.7
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112","23:22:00",rana catesbeiana,new,adult,female,111.2,151.2
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,25.6,1.1
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:30:00",rana clamitans,,,,,
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:44:00",rana clamitans,,,,,
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:00:00",rana catesbeiana,new,juvenile,unknown,42.8,7.8
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:00:00",rana catesbeiana,new,juvenile,unknown,50.2,12.3
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:17:00",rana clamitans,,,,,
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:50:00",rana catesbeiana,new,juvenile,female,42.4,9.0
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","22:57:00",rana catesbeiana,new,juvenile,unknown,45.9,8.7
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:15:00",rana catesbeiana,new,adult,female,87.2,79.7
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:25:00",rana catesbeiana,new,adult,female,95.4,87.3
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:33:00",rana catesbeiana,recapture,adult,female,113.9,174.8
+rv pond,2022-07-12,night,"22:03:00","00:00:00","117","23:42:00",rana catesbeiana,new,juvenile,unknown,32.7,2.6
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:07:00",rana clamitans,,juvenile,unknown,,
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:12:00",rana clamitans,,juvenile,unknown,,
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:28:00",rana clamitans,,adult,female,,
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:07:00",rana catesbeiana,new,adult,female,45.4,12.0
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:12:00",rana catesbeiana,new,juvenile,unknown,47.7,12.5
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:16:00",rana catesbeiana,new,adult,female,51.9,15.3
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:41:00",rana catesbeiana,new,adult,female,53.4,15.7
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:51:00",rana catesbeiana,new,adult,female,47.1,15.3
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,23.1,1.1
+phelps pond,2022-05-05,night,,,,,rana clamitans,,,female,53.8,12.2
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:57:00",rana catesbeiana,new,adult,female,50.5,16.2
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:02:00",rana catesbeiana,new,adult,female,50.6,15.2
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:06:00",rana catesbeiana,new,adult,female,46.9,11.3
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:08:00",rana catesbeiana,new,adult,female,43.9,8.8
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:10:00",rana catesbeiana,new,adult,female,47.0,11.5
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:12:00",rana catesbeiana,new,adult,female,51.7,20.7
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:21:00",rana catesbeiana,new,juvenile,unknown,38.6,7.8
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:38:00",rana catesbeiana,recapture,juvenile,unknown,42.8,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:41:00",rana catesbeiana,recapture,juvenile,unknown,46.2,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:46:00",rana catesbeiana,recapture,juvenile,unknown,44.0,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:48:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:52:00",rana pipiens,new,adult,unknown,34.9,3.3
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:57:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:00:00",rana catesbeiana,new,adult,female,46.5,11.1
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:34:00",rana catesbeiana,recapture,juvenile,unknown,52.7,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:37:00",rana catesbeiana,new,adult,female,44.4,9.5
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:41:00",rana catesbeiana,new,juvenile,,42.6,9.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:44:00",rana catesbeiana,new,adult,female,49.5,12.0
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102",,rana catesbeiana,new,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:48:00",rana catesbeiana,new,adult,female,53.0,13.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:53:00",rana catesbeiana,new,juvenile,,44.9,9.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:58:00",rana catesbeiana,new,adult,female,55.0,15.1
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:21:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:23:00",rana catesbeiana,new,adult,female,57.8,18.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:26:00",rana catesbeiana,new,juvenile,unknown,52.2,18.7
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:33:00",rana catesbeiana,new,juvenile,unknown,48.2,14.9
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:03:00",rana pipiens,new,juvenile,unknown,29.2,1.7
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:03:00",rana catesbeiana,new,adult,female,50.2,10.9
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:09:00",rana catesbeiana,new,adult,female,56.7,18.5
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:14:00",rana catesbeiana,new,adult,female,55.3,20.0
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:31:00",rana catesbeiana,new,adult,female,35.2,8.9
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:40:00",rana catesbeiana,new,juvenile,unknown,49.8,11.0
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:47:00",rana catesbeiana,new,juvenile,unknown,48.2,12.9
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:16:00",rana catesbeiana,new,juvenile,unknown,44.7,10.3
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:34:00",rana catesbeiana,new,adult,female,68.9,44.2
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:37:00",rana catesbeiana,new,juvenile,unknown,47.6,9.5
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,male,40.8,6.5
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:16:00",rana catesbeiana,new,adult,female,50.9,14.5
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:46:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:51:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:01:00",rana pipiens,new,adult,unknown,29.5,2.4
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:01:00",rana catesbeiana,new,adult,female,52.7,14.8
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:04:00",rana catesbeiana,new,juvenile,unknown,31.7,2.9
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:12:00",rana catesbeiana,new,adult,female,44.4,8.6
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:14:00",rana catesbeiana,new,adult,female,58.4,18.3
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:30:00",rana catesbeiana,new,juvenile,unknown,46.2,9.4
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:44:00",rana catesbeiana,new,juvenile,unknown,43.6,11.3
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:47:00",rana catesbeiana,new,juvenile,unknown,51.1,14.9
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:49:00",rana catesbeiana,new,adult,female,46.1,7.6
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:52:00",rana catesbeiana,new,juvenile,unknown,46.9,10.7
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","22:54:00",rana catesbeiana,new,juvenile,unknown,43.0,9.0
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:04:00",rana catesbeiana,new,adult,female,50.6,15.0
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:07:00",rana catesbeiana,new,adult,female,47.5,11.1
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:11:00",rana catesbeiana,new,juvenile,unknown,53.4,13.8
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,49.6,11.4
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:15:00",rana catesbeiana,new,adult,female,40.1,8.2
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:19:00",rana catesbeiana,new,juvenile,unknown,41.9,8.2
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:22:00",rana catesbeiana,new,adult,female,55.9,18.4
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104","23:25:00",rana catesbeiana,new,juvenile,unknown,47.6,13.7
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:35:00",rana clamitans,,juvenile,unknown,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:38:00",rana catesbeiana,new,juvenile,unknown,42.9,9.8
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:42:00",rana catesbeiana,new,adult,female,57.4,18.6
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:47:00",rana catesbeiana,new,adult,female,47.2,11.9
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:49:00",rana catesbeiana,new,juvenile,unknown,50.1,14.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:52:00",rana catesbeiana,new,adult,female,43.6,6.7
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:54:00",rana catesbeiana,new,adult,female,51.2,14.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:57:00",rana catesbeiana,new,juvenile,unknown,40.7,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","21:59:00",rana catesbeiana,new,juvenile,unknown,47.9,16.3
+phelps pond,2022-05-05,night,,,,,rana catesbeiana,new,adult,female,84.4,61.8
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:17:00",rana catesbeiana,new,adult,female,51.2,21.0
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:22:00",rana catesbeiana,new,adult,female,45.5,13.4
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:32:00",rana catesbeiana,recapture,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28","22:36:00",rana catesbeiana,new,juvenile,unknown,50.1,14.5
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102",,negative control,,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102",,rana catesbeiana,new,,,,
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,25.0,1.0
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102",,rana catesbeiana,new,,,,
+rv pond,2022-06-07,night,"21:25:00","23:07:00","102",,rana catesbeiana,new,,,,
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63",,rana catesbeiana,new,adult,female,109.2,162.38
+tuttle pond,2022-06-14,night,"21:44:00","22:47:00","63",,rana clamitans,,adult,male,,
+tuttle pond,2022-06-16,night,,,,,negative control,,,,,
+tryon-weber,2022-06-23,night,"21:48:00","22:27:00","39",,desmognathus fuscus,,adult,unknown,93.0,3.1
+vorisek pond,2022-06-27,night,"22:34:00","23:58:00","84",,negative control,,,,,
+rv pond,2022-07-11,night,"22:12:00","00:04:00","112",,negative control,,,,,
+tuttle pond,2022-07-18,night,"21:58:00","23:42:00","104",,negative control,,,,,
+tuttle pond,2022-07-19,night,"21:36:00","22:04:00","28",,negative control,,,,,
+wood lab pond,2022-05-04,night,,,,,pseudacris crucifer,new,adult,male,29.0,1.6
+wood lab pond,2022-05-04,night,,,,,rana catesbeiana,new,juvenile,,50.9,13.1
+wood lab pond,2022-05-04,night,,,,,pseudacris crucifer,new,adult,male,27.3,1.4
+wood lab pond,2022-05-04,night,,,,,rana catesbeiana,new,juvenile,,46.1,10.1
+wood lab pond,2022-05-04,night,,,,,rana clamitans,,juvenile,,42.1,4.9
+phelps pond,2022-05-05,night,,,,,rana catesbeiana,new,adult,female,53.9,12.3
+phelps pond,2022-05-05,night,,,,,rana catesbeiana,new,adult,female,135.9,
+phelps pond,2022-05-05,night,,,,,rana clamitans,,adult,female,74.6,39.5
+phelps pond,2022-05-05,night,,,,,rana clamitans,,adult,female,65.5,21.7
+phelps pond,2022-05-05,night,,,,,rana clamitans,,adult,male,77.0,50.8
+phelps pond,2022-05-05,night,,,,,rana clamitans,,adult,female,67.0,28.2
+phelps pond,2022-05-05,night,,,,,rana clamitans,,,female,59.5,19.4
+phelps pond,2022-05-05,night,,,,,rana catesbeiana,new,adult,male,60.4,20.7
+phelps pond,2022-05-05,night,,,,,rana clamitans,,adult,male,73.9,44.4
+phelps pond,2022-05-05,night,,,,,pseudacris crucifer,new,adult,male,28.8,1.4
+phelps pond,2022-05-05,night,,,,,pseudacris crucifer,new,adult,male,28.0,1.3
+phelps pond,2022-05-05,night,,,,,pseudacris crucifer,new,adult,male,27.2,1.2
+phelps pond,2022-05-05,night,,,,,pseudacris crucifer,new,adult,male,30.7,1.7
+admin pond,2022-05-11,night,,,,,pseudacris crucifer,new,adult,male,24.8,1.0
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,29.0,1.3
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,adult,female,78.2,41.5
+admin pond,2022-05-11,night,,,,,pseudacris crucifer,new,adult,male,29.0,1.3
+admin pond,2022-05-11,night,,,,,pseudacris crucifer,new,adult,male,26.0,1.1
+admin pond,2022-05-11,night,,,,,pseudacris crucifer,new,adult,male,24.4,
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,61.6,19.4
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,54.1,15.0
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,50.9,10.75
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,48.1,8.75
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,50.3,10.5
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,,51.0,10.5
+admin pond,2022-05-11,night,,,,,rana catesbeiana,new,juvenile,unknown,50.5,9.5
+admin pond,2022-05-11,night,,,,,rana clamitans,,adult,male,75.4,44.0
+admin pond,2022-05-11,night,,,,,rana clamitans,,adult,male,74.7,38.5
+admin pond,2022-05-11,night,,,,,rana clamitans,,adult,female,78.5,48.0
+admin pond,2022-05-11,night,,,,,rana clamitans,,adult,female,84.0,63.0
+admin pond,2022-05-11,night,,,,,rana clamitans,,adult,female,60.9,20.9
+admin pond,2022-05-11,night,,,,,toad sp.,,adult,unknown,53.6,15.25
+rv pond,2022-05-12,night,,,,,rana catesbeiana,new,adult,male,83.0,46.3
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,27.5,1.5
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,26.2,1.2
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,27.3,1.4
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,26.5,1.3
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,25.2,1.1
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,27.0,1.1
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,26.5,1.0
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,25.0,0.8
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,25.3,1.0
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,male,26.4,1.2
+rv pond,2022-05-12,night,,,,,pseudacris crucifer,new,adult,unknown,21.8,0.8
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,male,45.0,8.75
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,unknown,42.6,6.5
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,male,42.6,6.5
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,male,40.1,7.0
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,male,41.5,7.0
+rv pond,2022-05-12,night,,,,,hyla versicolor,,adult,male,39.0,5.0
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,52.1,12.25
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,58.6,16.0
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,46.9,10.0
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,51.2,14.28
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,48.6,10.5
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,52.1,15.0
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,48.7,11.0
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,52.3,11.75
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,57.1,16.0
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,53.3,12.2
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,52.6,11.5
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,51.0,12.75
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,53.6,14.75
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,62.5,20.5
+admin pond,2022-05-18,night,,,,,rana catesbeiana,new,juvenile,unknown,53.6,14.0
+admin pond,2022-05-18,night,,,,,rana pipiens,new,adult,female,69.8,28.0
+admin pond,2022-05-18,night,,,,,rana pipiens,new,adult,female,72.9,31.0
+admin pond,2022-05-18,night,,,,,rana pipiens,new,adult,female,54.9,10.75
+admin pond,2022-05-18,night,,,,,pseudacris crucifer,new,adult,male,25.8,0.7
+admin pond,2022-05-18,night,,,,,pseudacris crucifer,new,adult,male,29.0,1.3
+admin pond,2022-05-18,night,,,,,rana clamitans,,adult,female,83.2,65.2
+admin pond,2022-05-18,night,,,,,rana clamitans,,adult,female,77.4,50.2
+admin pond,2022-05-18,night,,,,,rana clamitans,,adult,male,72.9,40.0
+admin pond,2022-05-18,night,,,,,bufo americanus,,adult,unknown,58.1,22.4
