@@ -166,6 +166,10 @@ ves_analsys_tuttle$scaled_count<- ((ves_analsys_tuttle$count/ sum(ves_analsys_tu
 
 $~$
 
+#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean percent occurence between dates of surveys?
+
+$~$
+
 #### One-way ANOVA determining if date has an affect on mean percent occurrence per species at Tuttle Pond
 
 $~$
@@ -186,19 +190,7 @@ tidy(one_way_date) %>%
 
 $~$
 
-#### Tukey post-hoc test to determine significant date
-```{r}
-
-date_tukey <- TukeyHSD(one_way_date)
-
-tidy(date_tukey) %>% 
-  kable(digits = 2) %>% 
-  kable_styling()
-
-plot(date_tukey, las = 3, cex.axis = 0.5)
-
-```
-
+#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean percent occurrence between species present? 
 
 $~$
 
@@ -219,6 +211,10 @@ tidy(one_way_species) %>%
 ```
 
 ###### **Interpretation**: With an $\alpha$=0.05 we fail reject the null hypothesis and expect species surveyed does not affect in mean percent occurrence per species for Tuttle Pond.
+
+$~$
+
+#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean percent occurrence as interaction between date and species present?
 
 $~$
 
@@ -347,6 +343,10 @@ $~$
 
 $~$
 
+#### **Guiding Question**: Of repeated sites, is there a difference in mean percent occurrence of species between sites?
+
+$~$
+
 #### One-way ANOVA/T-test determining if site has an affect on mean percent occurrence per species
 
 $~$
@@ -363,6 +363,10 @@ tidy(one_way_site) %>%
 ```
 
 ###### **Interpretation**: With an $\alpha$=0.05 we reject the null and expect the site that has been repeated for a VES will affect the mean percent occurance per species.
+
+$~$
+
+#### **Guiding Question**: Of repeated sites, is there a difference in mean percent occurruence between species present?
 
 $~$
 
@@ -383,22 +387,11 @@ tidy(one_way_spec) %>%
 
 ```
 
+###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null and see no difference in percent occurance between each species for sites repeated for VES.
+
 $~$
 
-#### Tukey post-hoc test to determine significant date
-```{r}
-
-spec_tukey <- TukeyHSD(one_way_spec)
-
-tidy(spec_tukey) %>% 
-  kable(digits = 2) %>% 
-  kable_styling()
-
-plot(spec_tukey, las = 3, cex.axis = 0.3)
-
-```
-
-###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null and see no difference in percent occurance between each species for sites repeated for VES.
+##### **Guiding Question**: Between repeated sites, is there a difference in mean percent occurances between sites and species that occur?
 
 $~$
 
@@ -548,6 +541,10 @@ ggplot(data = comb_data, aes(x = reorder(site, -scaled_count), y = scaled_count,
 $~$
 
 ### Analyse Capture and VES data
+
+$~$
+
+#### **Guiding Question**: Of repeated sites between survey methods, is there a difference in mean percent occurence of species occuring between survey methods?
 
 $~$
 
