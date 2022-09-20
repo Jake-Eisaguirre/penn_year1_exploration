@@ -79,7 +79,7 @@ ggplot(data = visual, aes(fill = species_ves, x = reorder(species_ves, -scaled_c
   ylab("Percent Occurrence") +
   xlab("Species") +
   labs(title = "All VES Sites",
-       subtitle = "n=282 counts") +
+       subtitle = "n=282") +
   annotate("segment",x=Inf,xend=-Inf,y=Inf,yend=Inf,color="black",lwd=0.5)
 
 ```
@@ -135,7 +135,7 @@ ggplot(data = tuttle, aes(fill = species_ves, x = fct_infreq(species_ves), y = s
   ylab("Percent Occurrence") +
   xlab("Species") +
   labs(title = "Tuttle Pond",
-       subtitle = "n=100 counts") +
+       subtitle = "n=100") +
   annotate("segment",x=Inf,xend=-Inf,y=Inf,yend=Inf,color="black",lwd=0.5)
 
 
@@ -146,102 +146,7 @@ ggplot(data = tuttle, aes(fill = species_ves, x = fct_infreq(species_ves), y = s
 
 $~$
 
-### Analyse Tuttle Pond
-
-$~$
-
-#### VES Analysis DF
-
-```{r, message=FALSE}
-ves_analsys_tuttle <- ves %>% 
-  select(c(site, date, species_ves, count)) %>% 
-  filter(site == "tuttle pond") %>% 
-  mutate(site = as.factor(site),
-         date = as.factor(date),
-         species_ves = as.factor(species_ves))
-
-ves_analsys_tuttle$scaled_count<- ((ves_analsys_tuttle$count/ sum(ves_analsys_tuttle$count))*100)
-
-```
-
-$~$
-
-#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean percent occurence between dates of surveys?
-
-$~$
-
-#### One-way ANOVA determining if date has an affect on mean percent occurrence per species at Tuttle Pond
-
-$~$
-
-###### H0: There is no difference in mean percent occurrence per species between the dates surveyed at Tuttle Pond
-
-###### [ **HA: There is a difference in mean percent occurrence per species between the dates surveyed at Tuttle Pond** ]{style="color:blue"}
-
-```{r,  message=FALSE}
-one_way_date <- aov(scaled_count ~ date, data = ves_analsys_tuttle)
-
-tidy(one_way_date) %>% 
-  kable(digits = 2) %>% 
-  kable_styling()
-```
-
-###### **Interpretation**: With an $\alpha$=0.05 we reject the null hypothesis and expect date has an affect on mean percent occurrence for Tuttle Pond.
-
-$~$
-
-#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean percent occurrence between species present? 
-
-$~$
-
-#### One-way ANOVA determing if the species surveyed has an affect on mean percent occurrence per species at Tuttle Pond
-
-$~$
-
-###### [ **H0: There is no difference in mean species count between species surveyed Tuttle Pond** ]{style="color:blue"}
-
-###### HA: There is a difference in mean percent occurrence per species between species surveyed Tuttle Pond
-
-```{r,  message=FALSE}
-one_way_species <- aov(scaled_count ~ species_ves, data = ves_analsys_tuttle)
-
-tidy(one_way_species) %>% 
-  kable(digits = 2) %>% 
-  kable_styling()
-```
-
-###### **Interpretation**: With an $\alpha$=0.05 we fail reject the null hypothesis and expect species surveyed does not affect in mean percent occurrence per species for Tuttle Pond.
-
-$~$
-
-#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean percent occurrence as interaction between date and species present?
-
-$~$
-
-#### Two-way ANOVA determining if the species surveyed and date of survey has an affect on mean percent occurrence per species at Tuttle Pond
-
-$~$
-
-###### H0: There is no difference in mean occurrence per species from the dates surveyed and species surveyed at Tuttle Pond
-
-###### HA: There is a difference in mean occurrence per species from the dates surveyed and species surveyed at Tuttle Pond
-
-```{r,  message=FALSE}
-two_way_species_date <- aov(scaled_count ~ date*species_ves, data = ves_analsys_tuttle)
-
-tidy(two_way_species_date) %>% 
-  kable(digits = 2) %>% 
-  kable_styling()
-
-```
-
-$~$
-
-### Visualize Wood Pond
-
-$~$
-
-#### Sample size too small for analysis (n=11)
+### Visualize Wood Lab Pond
 
 ```{r,  message=FALSE}
 
@@ -258,7 +163,7 @@ ggplot(data = wood, aes(fill = species_ves, x = fct_infreq(species_ves), y = sca
   ylab("Percent Occurrence") +
   xlab("Species") +
   labs(title = "Wood Lab Pond",
-       subtitle = "n=11 counts") +
+       subtitle = "n=11") +
   annotate("segment",x=Inf,xend=-Inf,y=Inf,yend=Inf,color="black",lwd=0.5)
 
 
@@ -268,9 +173,9 @@ ggplot(data = wood, aes(fill = species_ves, x = fct_infreq(species_ves), y = sca
 
 $~$
 
-### Visualize Species Occurrance
+### Visualize Species Occurrence
 
-#### Species Occurrance Wrangling
+#### Species Occurrence Wrangling
 
 ```{r, message = F, warning=F}
 combined_site <- ves_repeat_survs %>% 
@@ -282,14 +187,16 @@ combined_site$scaled_count<- ((combined_site$count/ sum(combined_site$count))*10
 
 combine_analysis <- ves %>% 
   select(site, date, species_ves, count) %>% 
-  filter(site %in% c("tuttle pond", "wood lab pond"))
+  filter(site %in% c("tuttle pond", "wood lab pond")) %>% 
+  mutate(log_count = log(count))
+  
 
 combine_analysis$scaled_count<- ((combine_analysis$count/ sum(combine_analysis$count))*100)
 ```
 
 $~$
 
-#### Plot for species occurances per site
+#### Plot for species occurrence per site
 
 ```{r,  message=FALSE, warning=F}
 
@@ -306,12 +213,12 @@ ggplot(data = combined_site, aes(x = fct_infreq(species_ves), y = scaled_count, 
   ylab("Percent Occurrance") +
   xlab("Species") +
   labs(title = "VES Repeated Sites",
-       subtitle = "Tuttle dates (n=3) & Wood lab dates (n=2)") +
+       subtitle = "Tuttle Surveys (n=3) & Wood lab Surveys (n=2)") +
   annotate("segment",x=Inf,xend=-Inf,y=Inf,yend=Inf,color="black",lwd=0.5)
 
 ```
 
-###### **Interpretation**: Of the VES where sites were repeated we see the majority of percent occurrence between the three unique species occured at Tuttle Pond.
+###### **Interpretation**: Of the VES where sites were repeated we see the majority of percent occurrence between the three unique species occurred at Tuttle Pond.
 
 $~$
 
@@ -335,82 +242,9 @@ ggplot(data = combined_site, aes(x = fct_infreq(species_ves), y = scaled_count, 
 
 ```
 
-###### **Interpretation**: When looking at the percent occurance of each species between the two repeated sites (Tuttle Pond & Woods Lab Pond) we see Rana catesbeiana occured the most with Rana pipiens occuring the least.
+###### **Interpretation**: When looking at the percent occurrence of each species between the two repeated sites (Tuttle Pond & Woods Lab Pond) we see Rana catesbeiana occurred the most with Rana pipiens occurring the least.
 
 $~$
-
-### Analyse Sites
-
-$~$
-
-#### **Guiding Question**: Of repeated sites, is there a difference in mean percent occurrence of species between sites?
-
-$~$
-
-#### One-way ANOVA/T-test determining if site has an affect on mean percent occurrence per species
-
-$~$
-
-###### H0: There is no difference on mean percent occurrence per species between repeated sites (Tuttle & Wood)
-
-###### [ **HA: There is a difference in mean percent occurrence per species between repeated sites (Tuttle & Wood)**  ]{style="color:blue"}
-
-```{r,  message=FALSE}
-one_way_site <- aov(scaled_count ~ site, data = combine_analysis)
-tidy(one_way_site) %>% 
-  kable(digits = 4) %>% 
-  kable_styling()
-```
-
-###### **Interpretation**: With an $\alpha$=0.05 we reject the null and expect the site that has been repeated for a VES will affect the mean percent occurance per species.
-
-$~$
-
-#### **Guiding Question**: Of repeated sites, is there a difference in mean percent occurruence between species present?
-
-$~$
-
-#### One-way ANOVA determining if species has an affect on mean percent occurrence per species
-
-$~$
-
-###### [ **H0: There is no difference in mean species counts between species surveyed at repeated sites (Tuttle & Wood)**  ]{style="color:blue"}
-
-###### HA: There is a difference in mean species counts between species surveyed repeated sites (Tuttle & Wood)
-
-```{r, message=F}
-
-one_way_spec <- aov(scaled_count ~ species_ves, data = combine_analysis)
-tidy(one_way_spec) %>% 
-  kable(digits = 4) %>% 
-  kable_styling()
-
-```
-
-###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null and see no difference in percent occurance between each species for sites repeated for VES.
-
-$~$
-
-##### **Guiding Question**: Between repeated sites, is there a difference in mean percent occurances between sites and species that occur?
-
-$~$
-
-#### Two-way ANOVA determining if repeated sites (Tuttle Pond and Woods Lab Pond) and species present has an affect on mean percent occurrence per species
-
-$~$
-
-###### H0: There is no difference in mean percent occurrence per species between repeated sites and species present.
-
-###### HA: There is a difference in mean percent occurrence per species between repeated sites and species present.
-
-```{r,  message=FALSE}
-
-two_way_site_species <- aov(scaled_count ~ site + species_ves, data = combine_analysis)
-tidy(two_way_site_species) %>% 
-  kable(digits = 4) %>% 
-  kable_styling()
-
-```
 
 $~$
 
@@ -458,11 +292,21 @@ visual_join <- visual %>%
   rename(visual_count = count,
          visual_scaled_count = scaled_count)
 
+# percent occurrence for plots
 comb_data <- merge(capture, visual_join, by.x = c("site", "species_capture"), by.y = c("site", "species_ves")) %>% 
   rename(species = species_capture) %>% 
   select(!c(capture_count, visual_count)) %>% 
   pivot_longer(!c(site, species), names_to = "capture_ves", values_to = "scaled_count") %>% 
   mutate(species = as.factor(species))
+
+
+# log count data for ANOVA
+comb_count <- merge(capture, visual_join, by.x = c("site", "species_capture"), by.y = c("site", "species_ves")) %>% 
+  rename(species = species_capture) %>% 
+  select(!c(capture_scaled_count, visual_scaled_count)) %>% 
+  pivot_longer(!c(site, species), names_to = "capture_ves", values_to = "scaled_count") %>% 
+  mutate(species = as.factor(species),
+         log_count = log(scaled_count))
 
 
 ```
@@ -491,7 +335,7 @@ ggplot(data = capture, aes(x = reorder(species_capture, -capture_scaled_count),
 
 ```
 
-###### **Interpretation**: Of all the Capture Survey data, when looking at similiar species from VES, we see Rana catesbeiana being captured the most, Rana clamitans captured the second most, and Rana pipiens being captured the 5th most.
+###### **Interpretation**: Of all the Capture Survey data, when looking at similar species from VES, we see Rana catesbeiana being captured the most, Rana clamitans captured the second most, and Rana pipiens being captured the 5th most.
 
 $~$
 
@@ -504,17 +348,17 @@ ggplot(data = comb_data, aes(x = reorder(species, -scaled_count), y = scaled_cou
   theme_classic()+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5),
         strip.background = element_blank()) +
-  scale_fill_viridis_d(name = "Survey Method") +
+  scale_fill_viridis_d(name = "Survey Method", labels = c("Capture", "VES")) +
   scale_y_continuous(expand = c(0,0), limits = c(0,35)) +
   ylab("Percent Occurrence") +
   xlab("Species") +
   labs(title = "Capture and VES Species Occurance",
-       subtitle = "Matching Sites and Species")
+       subtitle = "Matching Species")
 
 
 ```
 
-###### **Interpretation**: When comparing the percent occurrence between the 3 similiar species, 2 different survey types (Capture Surveys and VES), and sites where both occured, we see similiar percent occurrences for Rana catesbeiana and Rana pipiens and starkly different percent occurrences in Rana clamitans.
+###### **Interpretation**: When comparing the percent occurrence between the 3 similar species, 2 different survey types (Capture Surveys and VES), and sites where both occurred, we see similar percent occurrences for Rana catesbeiana and Rana pipiens and starkly different percent occurrences in Rana clamitans.
 
 $~$
 
@@ -527,16 +371,16 @@ ggplot(data = comb_data, aes(x = reorder(site, -scaled_count), y = scaled_count,
   theme_classic()+
   theme(axis.text.x = element_text(angle = 45, vjust = 0.5),
         strip.background = element_blank()) +
-  scale_fill_viridis_d(name = "Survey Method") +
+  scale_fill_viridis_d(name = "Survey Method", labels = c("Capture", "VES")) +
   scale_y_continuous(expand = c(0,0), limits = c(0,35)) +
   ylab("Percent Occurrence") +
   xlab("Site") +
   labs(title = "Capture and VES Species Occurance of All Sites",
-       subtitle = "Matching Sites and Species")
+       subtitle = "")
 
 ```
 
-###### **Interpretation**: When comparing percent occurrence between survey methods at matching survey sites we see no clear trend in percent occurance.
+###### **Interpretation**: When comparing percent occurrence between survey methods at matching survey sites we see no clear trend in percent occurrence.
 
 $~$
 
@@ -544,21 +388,21 @@ $~$
 
 $~$
 
-#### **Guiding Question**: Of repeated sites between survey methods, is there a difference in mean percent occurence of species occuring between survey methods?
+#### **Guiding Question**: Of repeated sites between survey methods, is there a difference in log count of species occurring between survey methods?
 
 $~$
 
-#### One-way ANOVA/T-test determining if the survey method affects the mean percent occurrence per species
+#### One-way ANOVA/T-test determining if the survey method affects the mean log count per species
 
 $~$
 
-###### [ **H0: There is no difference in mean percent occurrence per species between survey methods (Capture & VES)** ]{style="color:blue"}
+###### [**H0: There is no difference in mean log count per species between survey methods (Capture & VES)**]{style="color:blue"}
 
-###### HA: There is a difference in mean percent occurrence per species between survey methods (Capture & VES)
+###### HA: There is a difference in mean log count per species between survey methods (Capture & VES)
 
 ```{r}
 
-cap_ves <- aov(scaled_count ~ capture_ves, data = comb_data)
+cap_ves <- aov(log_count ~ capture_ves, data = comb_count)
 tidy(cap_ves) %>% 
   kable(digits = 4) %>% 
   kable_styling()
@@ -566,10 +410,181 @@ tidy(cap_ves) %>%
 
 ```
 
-###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null indicating there is no difference in percent occurance per species between survey methods.
+###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null indicating there is no difference in log count per species between survey methods.
 
 $~$
+
+```{r}
+par(mfrow=c(2,2))
+plot(cap_ves)
+par(mfrow=c(1,1))
+
+```
+
+```{r}
+hist(comb_count$scaled_count)
+hist(comb_count$log_count)
+```
 
 # GitHub
 
 ##### Github repository containing the reproducible script can be found [HERE](https://github.com/Jake-Eisaguirre/penn_year1_exploration). Cloning or Forking the repository to your own computer will allow for complete reproducibility of this data exploration.
+
+$~$
+
+# Exploratory Analysis
+
+```{r, message=FALSE}
+ves_analsys_tuttle <- ves %>% 
+  select(c(site, date, species_ves, count)) %>% 
+  filter(site == "tuttle pond") %>% 
+  mutate(site = as.factor(site),
+         date = as.factor(date),
+         species_ves = as.factor(species_ves),
+         log_count = log(count))
+
+ves_analsys_tuttle$scaled_count<- ((ves_analsys_tuttle$count/ sum(ves_analsys_tuttle$count))*100)
+
+```
+
+$~$
+
+#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean log count between dates of surveys?
+
+$~$
+
+#### One-way ANOVA determining if date has an affect on mean log count per species at Tuttle Pond
+
+$~$
+
+###### H0: There is no difference in mean log count per species between the dates surveyed at Tuttle Pond
+
+###### [**HA: There is a difference in mean log count per species between the dates surveyed at Tuttle Pond**]{style="color:blue"}
+
+```{r,  message=FALSE}
+one_way_date <- aov(log_count ~ date, data = ves_analsys_tuttle)
+
+tidy(one_way_date) %>% 
+  kable(digits = 2) %>% 
+  kable_styling()
+```
+
+###### **Interpretation**: With an $\alpha$=0.05 we reject the null hypothesis and expect date has an affect on mean log count for Tuttle Pond.
+
+$~$
+
+#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean log count between species present?
+
+$~$
+
+#### One-way ANOVA determing if the species surveyed has an affect on mean log count per species at Tuttle Pond
+
+$~$
+
+###### [**H0: There is no difference in meanlog count between species surveyed Tuttle Pond**]{style="color:blue"}
+
+###### HA: There is a difference in mean log count per species between species surveyed Tuttle Pond
+
+```{r,  message=FALSE}
+one_way_species <- aov(log_count ~ species_ves, data = ves_analsys_tuttle)
+
+tidy(one_way_species) %>% 
+  kable(digits = 2) %>% 
+  kable_styling()
+```
+
+###### **Interpretation**: With an $\alpha$=0.05 we fail reject the null hypothesis and expect species surveyed does not affect in mean log count per species for Tuttle Pond.
+
+$~$
+
+#### **Guiding Question**: Of repeated VES at Tuttle Pond, is there a difference in mean log count as interaction between date and species present?
+
+$~$
+
+#### Two-way ANOVA determining if the species surveyed and date of survey has an affect on mean log count per species at Tuttle Pond
+
+$~$
+
+###### H0: There is no difference in mean log count per species from the dates surveyed and species surveyed at Tuttle Pond
+
+###### HA: There is a difference in mean log count per species from the dates surveyed and species surveyed at Tuttle Pond
+
+```{r,  message=FALSE}
+two_way_species_date <- aov(log_count ~ date*species_ves, data = ves_analsys_tuttle)
+
+tidy(two_way_species_date) %>% 
+  kable(digits = 2) %>% 
+  kable_styling()
+
+```
+
+$~$
+
+#### **Guiding Question**: Of repeated sites, is there a difference in mean log count of species between sites?
+
+$~$
+
+#### One-way ANOVA/T-test determining if site has an affect on mean log count per species
+
+$~$
+
+###### H0: There is no difference on mean log count per species between repeated sites (Tuttle & Wood)
+
+###### [**HA: There is a difference in mean log countper species between repeated sites (Tuttle & Wood)**]{style="color:blue"}
+
+```{r,  message=FALSE}
+one_way_site <- aov(log_count ~ site, data = combine_analysis)
+tidy(one_way_site) %>% 
+  kable(digits = 4) %>% 
+  kable_styling()
+```
+
+###### **Interpretation**: With an $\alpha$=0.05 we reject the null and expect the site that has been repeated for a VES will affect the log count occurance per species.
+
+$~$
+
+#### **Guiding Question**: Of repeated sites, is there a difference in mean log count between species present?
+
+$~$
+
+#### One-way ANOVA determining if species has an affect on mean log count per species
+
+$~$
+
+###### [**H0: There is no difference in mean species counts between species surveyed at repeated sites (Tuttle & Wood)**]{style="color:blue"}
+
+###### HA: There is a difference in mean species counts between species surveyed repeated sites (Tuttle & Wood)
+
+```{r, message=F}
+
+one_way_spec <- aov(log_count ~ species_ves, data = combine_analysis)
+tidy(one_way_spec) %>% 
+  kable(digits = 4) %>% 
+  kable_styling()
+
+```
+
+###### **Interpretation**: With an $\alpha$=0.05 we fail to reject the null and see no difference in log count between each species for sites repeated for VES.
+
+$~$
+
+##### **Guiding Question**: Between repeated sites, is there a difference in mean log count between sites and species that occur?
+
+$~$
+
+#### Two-way ANOVA determining if repeated sites (Tuttle Pond and Woods Lab Pond) and species present has an affect on mean log count per species
+
+$~$
+
+###### H0: There is no difference in mean log count per species between repeated sites and species present.
+
+###### HA: There is a difference in mean log count per species between repeated sites and species present.
+
+```{r,  message=FALSE}
+
+two_way_site_species <- aov(log_count ~ site + species_ves, data = combine_analysis)
+tidy(two_way_site_species) %>% 
+  kable(digits = 4) %>% 
+  kable_styling()
+
+```
